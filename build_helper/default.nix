@@ -3,7 +3,7 @@
     #     nix-env -i -f ./  
     # or
     #     nix profile install ./
-    builtins ? builtins, # yep... nix allows reassignment of "builtins" actually quite handy here
+    builtins ? import (__toFile "default.nix" "builtins"), # yep... nix allows reassignment of "builtins" so long as you get around the scoping problem
     lib ? (
         let
             flake = (builtins.import 
@@ -46,8 +46,9 @@
                 
                 # export HOME="$out/temp_home"
                 
-                mkdir -p "$out/"
+                mkdir -p "$out/bin"
                 cp -r "${emscripten}/"* "$out/"
+                rm "$out/bin/emcc"
                 
                 echo "#!"${lib.escapeShellArg "${bash}/bin/bash"}'
                     if [ -z "$EM_CACHE" ]
