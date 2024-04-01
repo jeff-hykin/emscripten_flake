@@ -43,8 +43,6 @@
             "-c"
             ''
                 export PATH="$PATH:${coreutils}/bin"
-                # export PATH="$PATH:${deno}/bin/"
-                # export PATH="$PATH:${unzip}/bin"
                 
                 # export HOME="$out/temp_home"
                 
