@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+run/build_for_nix
+run/remove emscripten
+nix profile install ./
