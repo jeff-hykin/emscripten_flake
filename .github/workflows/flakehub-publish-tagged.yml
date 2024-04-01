@@ -23,5 +23,5 @@ jobs:
       - uses: "DeterminateSystems/flakehub-push@main"
         with:
           visibility: "public"
-          name: "jeff-hykin/emscripten"
+          name: "jeff-hykin/emscripten_flake"
           tag: "${{ inputs.tag }}"
