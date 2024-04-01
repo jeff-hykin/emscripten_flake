@@ -12,9 +12,10 @@ A flake for installing emscripten (with a fix for the emscripten cache trying to
 ## Installation
 
 ```sh
-nix-env -i -f https://github.com/jeff-hykin/nix_version_search_cli/archive/0a19285e8b025dff74884117e47894659e9ebd7e.tar.gz
+# for version 3.1.51
+nix-env -i -f https://github.com/jeff-hykin/nix_version_search_cli/archive/565477a319b0c28046b0e4dbfe5cc9827837a875.tar.gz
 # or, if you have flakes:
-nix profile install 'https://github.com/jeff-hykin/nix_version_search_cli/archive/0a19285e8b025dff74884117e47894659e9ebd7e.tar.gz#emscripten'
+nix profile install 'https://github.com/jeff-hykin/nix_version_search_cli/archive/565477a319b0c28046b0e4dbfe5cc9827837a875.tar.gz#emscripten'
 ```
 
 ## How to use
