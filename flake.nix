@@ -1,5 +1,5 @@
 {
-    description = "";
+    description = "An LLVM-to-JavaScript Compiler";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
